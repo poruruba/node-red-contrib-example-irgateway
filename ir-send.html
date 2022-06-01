@@ -1,0 +1,37 @@
+<script type="text/javascript">
+    RED.nodes.registerType('ir-send',{
+        category: 'IrGateway',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+            address: {value:0},
+	    command: {value:0}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "feed.svg",
+        label: function() {
+            return this.name || "ir-send";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="ir-send">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-address"><i class="icon-tag"></i> Address</label>
+        <input type="number" id="node-input-address" placeholder="Address">
+    </div>
+    <div class="form-row">
+        <label for="node-input-command"><i class="icon-tag"></i> Command</label>
+        <input type="number" id="node-input-command" placeholder="Command">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="ir-send">
+    <p>A simple node that send IR address, command.</p>
+</script>
+

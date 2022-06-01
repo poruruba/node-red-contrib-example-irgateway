@@ -1,0 +1,100 @@
+<script type="text/javascript">
+    RED.nodes.registerType('ir-pixels',{
+        category: 'IrGateway',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+	    forecolor: {value:'#ffffff'},
+	    backcolor: {value:'#000000'},
+	    btn00: {value:false},
+	    btn01: {value:false},
+	    btn02: {value:false},
+	    btn03: {value:false},
+	    btn04: {value:false},
+            btn05: {value:false},
+            btn06: {value:false},
+            btn07: {value:false},
+            btn08: {value:false},
+            btn09: {value:false},
+            btn10: {value:false},
+            btn11: {value:false},
+            btn12: {value:false},
+            btn13: {value:false},
+            btn14: {value:false},
+            btn15: {value:false},
+            btn16: {value:false},
+            btn17: {value:false},
+            btn18: {value:false},
+            btn19: {value:false},
+            btn20: {value:false},
+            btn21: {value:false},
+            btn22: {value:false},
+            btn23: {value:false},
+            btn24: {value:false},
+        },
+        inputs:1,
+        outputs:1,
+        icon: "feed.svg",
+        label: function() {
+            return this.name || "ir-pixels";
+	}
+    });
+</script>
+
+<script type="text/html" data-template-name="ir-pixels">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+	<label for="node-input-value"><i class="icon-tag"></i> Value</label>
+	<br>
+	<label></label>
+	<input type="checkbox" id="node-input-btn00" style="display: inline-block; width: auto;">
+	<input type="checkbox" id="node-input-btn01" style="display: inline-block; width: auto;">
+	<input type="checkbox" id="node-input-btn02" style="display: inline-block; width: auto;">
+	<input type="checkbox" id="node-input-btn03" style="display: inline-block; width: auto;">
+        <input type="checkbox" id="node-input-btn04" style="display: inline-block; width: auto;">
+	<br>
+	<label></label>
+        <input type="checkbox" id="node-input-btn05" style="display: inline-block; width: auto;">
+        <input type="checkbox" id="node-input-btn06" style="display: inline-block; width: auto;">
+        <input type="checkbox" id="node-input-btn07" style="display: inline-block; width: auto;">
+        <input type="checkbox" id="node-input-btn08" style="display: inline-block; width: auto;">
+        <input type="checkbox" id="node-input-btn09" style="display: inline-block; width: auto;">
+	<br>
+	<label></label>
+        <input type="checkbox" id="node-input-btn10" style="display: inline-block; width: auto;">
+        <input type="checkbox" id="node-input-btn11" style="display: inline-block; width: auto;">
+        <input type="checkbox" id="node-input-btn12" style="display: inline-block; width: auto;">
+        <input type="checkbox" id="node-input-btn13" style="display: inline-block; width: auto;">
+        <input type="checkbox" id="node-input-btn14" style="display: inline-block; width: auto;">
+	<br>
+	<label></label>
+        <input type="checkbox" id="node-input-btn15" style="display: inline-block; width: auto;">
+        <input type="checkbox" id="node-input-btn16" style="display: inline-block; width: auto;">
+        <input type="checkbox" id="node-input-btn17" style="display: inline-block; width: auto;">
+        <input type="checkbox" id="node-input-btn18" style="display: inline-block; width: auto;">
+        <input type="checkbox" id="node-input-btn19" style="display: inline-block; width: auto;">
+	<br>
+	<label></label>
+        <input type="checkbox" id="node-input-btn20" style="display: inline-block; width: auto;">
+        <input type="checkbox" id="node-input-btn21" style="display: inline-block; width: auto;">
+        <input type="checkbox" id="node-input-btn22" style="display: inline-block; width: auto;">
+        <input type="checkbox" id="node-input-btn23" style="display: inline-block; width: auto;">
+        <input type="checkbox" id="node-input-btn24" style="display: inline-block; width: auto;">
+    </div>
+    <div class="form-row">
+        <label for="node-input-forecolor"><i class="icon-tag"></i> ForeColor</label>
+        <input type="color" id="node-input-forecolor" style="width: 30px;">
+    </div>
+    <div class="form-row">
+        <label for="node-input-backcolor"><i class="icon-tag"></i> BackColor</label>
+        <input type="color" id="node-input-backcolor" style="width: 30px;">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="ir-pixels">
+    <p>A simple node that send IR address, command.</p>
+</script>
+
