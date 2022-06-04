@@ -20,7 +20,7 @@
 #define UDP_SEND_PORT 1401
 #define UDP_RECV_PORT 1402
 
-#define IR_SEND_PORT 33
+#define IR_SEND_PORT 26
 #define IR_RECV_PORT 32
 
 #define NUM_OF_PIXELS 25
